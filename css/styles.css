@@ -1,5 +1,8 @@
-* {
+*,
+*::before,
+*::after {
   font-style: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,10 +12,48 @@ body {
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 156px;
+  padding-right: 156px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .nav-name {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  padding-top: 24px;
+  margin-bottom: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -25,10 +66,13 @@ body {
 }
 
 .nav-list {
-  list-style: none;
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
 }
 
 .nav-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -47,10 +91,15 @@ body {
 }
 
 .add-list {
-  list-style: none;
+  display: flex;
+  margin-left: 332px;
+  gap: 40px;
+  align-items: center;
 }
 
 .add-link {
+  display: block;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -69,19 +118,34 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 48px;
+  max-width: 496px;
   color: #fff;
 }
 
 .main {
   background: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 .main-button {
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  border-radius: 4px;
+  margin: 0 auto;
+  border: none;
+  height: 56px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
 }
 
@@ -97,10 +161,15 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  display: none;
 }
 
 .ben-list {
-  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  gap: 24px;
 }
 
 .ben-list-title {
@@ -112,14 +181,17 @@ body {
 }
 
 .ben-list-text {
+  margin-top: 8px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  width: 264px;
 }
 
 .team {
   background-color: #f4f4fd;
+  height: 732px;
 }
 
 .team-title {
@@ -129,15 +201,21 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
+  padding-top: 120px;
   color: #2e2f42;
 }
 
 .team-list {
-  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .team-color {
-  background-color: #ffffff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
 }
 
 .team-list-title {
@@ -146,6 +224,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-top: 32px;
+  margin-bottom: 8px;
   color: #2e2f42;
 }
 
@@ -155,6 +235,8 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  width: 264px;
+  padding-bottom: 32px;
 }
 
 .portf-title {
@@ -164,11 +246,20 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  padding-top: 120px;
+  margin-bottom: 72px;
   color: #2e2f42;
 }
 
+.portf {
+  padding-bottom: 120px;
+}
+
 .portf-list {
-  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .portf-list-title {
@@ -176,7 +267,17 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  width: 360px;
+  margin-bottom: 8px;
   color: #2e2f42;
+}
+
+.portf-list-elem {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
 }
 
 .portf-text {
@@ -188,6 +289,10 @@ body {
 
 .foot {
   background: #2e2f42;
+  height: 312px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .foot-name {
@@ -206,8 +311,10 @@ body {
 }
 
 .foot-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
 }
