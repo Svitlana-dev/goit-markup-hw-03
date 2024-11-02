@@ -170,14 +170,17 @@ img {
   padding: 120px 0;
 }
 
-.ben-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11111;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .ben-list {
@@ -224,14 +227,14 @@ img {
   display: flex;
   align-items: center;
   gap: 24px;
-  width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .team-color {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-info {
@@ -255,7 +258,6 @@ img {
   text-align: center;
   color: #434455;
   width: 264px;
-  padding-bottom: 32px;
 }
 
 .portf-title {
@@ -310,9 +312,9 @@ img {
 .foot {
   background: #2e2f42;
   height: 312px;
-  display: flex;
   justify-content: flex-start;
   align-items: center;
+  text-align: left;
   padding: 100px 0;
 }
 
