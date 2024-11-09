@@ -211,7 +211,6 @@ img {
 
 .team {
   background-color: #f4f4fd;
-  height: 732px;
   padding: 120px 0;
 }
 
@@ -260,7 +259,6 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  width: 264px;
 }
 
 .portf-title {
@@ -316,10 +314,6 @@ img {
 
 .foot {
   background: #2e2f42;
-  height: 312px;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: left;
   padding: 100px 0;
 }
 
